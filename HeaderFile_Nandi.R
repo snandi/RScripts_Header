@@ -78,16 +78,6 @@ library('xts')
 library('zipcode')
 library('zoo')
 
-## For Reuters Data Interface
-#library('reut')
-
-## MyAutoLoads <- c('boot', 'chron', 'fBasics', 'foreach', 'fPortfolio', 'fRegression', 
-##'fSeries', 'fUtilities', 'graphics', 'gdata', 'gplots', 'gtools', 'Hmisc', 'iterators', 
-##'lpSolve', 'mgcv', 'nortest', 'nws', 'PerformanceAnalytics', 'plotrix', 'profr', 
-##'quantmod', 'R2HTML', 'Rsymphony', 'sos', 'st', 'stats', 'svMisc', 'tseries', 'TTR', 
-##'urca', 'VaR', 'vrtest', 'xlsReadWrite', 'XML', 'xts', 'zoo')
-##'
-
 MyAutoLoads <- c('alr3', 'boot', 'car', 'chron', 'DAAG', 'datasets', 'doSNOW', 'epicalc', 'faraway', 
                  'foreach', 'gam', 'gdata', 'gmodels', 'ggplot2', 'gplots', 'graphics', 
                  'gtools', 'Hmisc', 'inline', 'iterators', 'lattice', 'leaps',  
