@@ -84,4 +84,4 @@ MyAutoLoads <- c('alr3', 'boot', 'car', 'chron', 'DAAG', 'datasets', 'doSNOW', '
                  'lmtest', 'lpSolve', 'mAr', 'nlme', 'nortest', 'nws', 'PerformanceAnalytics', 
                  'plotrix', 'pls', 'plyr', 'profr', 'quantmod', 'R2HTML', 'rbenchmark', 
                  'sandwich', 'SenSrivastava', 'sos', 'st', 'stats', 'survey', 'survival', 
-                 'svMisc', 'tseries', 'TTR', 'urca', 'vrtest', 'wle', 'XML', 'xts', 'zoo'))
+                 'svMisc', 'tseries', 'TTR', 'urca', 'vrtest', 'wle', 'XML', 'xts', 'zoo')
