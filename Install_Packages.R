@@ -22,6 +22,7 @@ install.packages('fda')
 install.packages('fields')
 install.packages('foreach')
 install.packages('foreign', dependencies = TRUE)
+install.packages('fpc', dependencies = TRUE) # For cluster comparisons
 install.packages('fPortfolio', dependencies = TRUE)
 install.packages('fRegression')
 install.packages('fSeries')
