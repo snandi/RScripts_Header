@@ -83,6 +83,7 @@ install.packages('robustbase')
 install.packages('Rsymphony')
 install.packages('sandwich')
 install.packages('SenSrivastava')
+install.packages('sets', dependencies=T) ## Set operations	
 install.packages('slam')	
 install.packages('sos')
 install.packages('st')
