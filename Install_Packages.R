@@ -78,6 +78,7 @@ install.packages('R2HTML')
 install.packages('rbenchmark')
 install.packages('Rcpp')
 install.packages('reshape', dependencies=T) ## Wont install on lmcg
+install.packages('reshape2', dependencies=T) ## Wont install on lmcg
 install.packages('RMySQL')	
 install.packages('robustbase')  
 install.packages('Rsymphony')
