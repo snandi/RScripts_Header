@@ -22,6 +22,7 @@ Packages <- c(
   'fBasics', 
   'fda', 
   'fields', 
+  'fOptions',
   'foreach', 
   'foreign', 
   'fpc',  
