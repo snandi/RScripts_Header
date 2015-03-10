@@ -28,7 +28,7 @@ Packages <- c(
   'fpc',  
   'fPortfolio', 
   'fRegression', 
-  'fSeries', 
+#  'fSeries', 
   'fUtilities', 
   'gam', 
   'gdata', 
