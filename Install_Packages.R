@@ -21,6 +21,7 @@ Packages <- c(
   'fAssets', 
   'fBasics', 
   'fda', 
+  'fdakma',
   'fields', 
   'fOptions',
   'foreach', 
@@ -116,7 +117,7 @@ Packages <- c(
 for(Package in Packages){
   print(Package)
   if(require(package=Package, character.only=T) == F){
-    install.packages(Package, dependencies = TRUE)
+    try(install.packages(Package, dependencies = TRUE))
   } else{
     print('already exists')
   }
