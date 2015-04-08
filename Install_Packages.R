@@ -27,7 +27,7 @@ Packages <- c(
   'foreach', 
   'foreign', 
   'fpc',  
-  'fPortfolio', 
+#  'fPortfolio', 
   'fRegression', 
 #  'fSeries', 
   'fUtilities', 
