@@ -26,7 +26,7 @@ Packages <- c(
   'fOptions',
   'foreach', 
   'foreign', 
-  'fpc',  
+  'fpc',  # For cluster comparisons ## Wont install on lmcg
 #  'fPortfolio', 
   'fRegression', 
 #  'fSeries', 
@@ -67,7 +67,7 @@ Packages <- c(
   'modeest', 
   'nlme', 
   'nortest', 
-  'numDeriv',   
+  'numDeriv',   ## To calculate gradient, hessian, jacobian of functions
   'nws',
   'orthogonalsplinebasis',
   'PerformanceAnalytics', 
@@ -85,11 +85,12 @@ Packages <- c(
   'reshape',  
   'reshape2',  
   'RMySQL',   
-  'robustbase',   
+  'robustbase', 
+  'robustX',    ## For multivariate median and other experimental stats
   'Rsymphony', 
   'sandwich', 
   'SenSrivastava', 
-  'sets', 
+  'sets', ## Set operations      
   'slam',   
   'sos',
   'speff2trial',
@@ -109,7 +110,6 @@ Packages <- c(
   'xts', 
   'zipcode', 
   'zoo', 
-  'fSeries', 
   'bigmemory', 
   'doSNOW', 
   'snow', 

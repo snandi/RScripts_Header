@@ -51,6 +51,7 @@ try(library('quantmod'))
 try(library('R2HTML'))
 try(library('rbenchmark'))
 try(library('reshape'))
+try(library('robustX'))
 try(library('sandwich'))
 try(library('SenSrivastava'))
 try(library('sos'))
@@ -123,6 +124,7 @@ MyAutoLoads <- c('alr3',
                  'R2HTML', 
                  'rbenchmark', 
                  'reshape', 
+                 'robustX', 
                  'sandwich', 
                  'SenSrivastava', 
                  'sos', 
