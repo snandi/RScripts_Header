@@ -15,6 +15,7 @@ try(library('faraway'))
 try(library('fBasics'))
 try(library('fda'))
 try(library('fdakma'))
+try(library('fdasrvf'))
 try(library('foreach'))
 try(library('fOptions'))
 try(library('foreign'))
@@ -108,6 +109,7 @@ MyAutoLoads <- c('alr3',
                  'faraway', 
                  'fda', 
                  'fdakma', 
+                 'fdasrvf', 
                  'foreach', 
                  'foreign', 
                  'fpc', 

@@ -8,6 +8,7 @@ Packages <- c(
   'alr3', 
   'biganalytics', 
   'biglm', 
+  'bigmemory', 
   'boot',  
   'car', 
   'chron', 
@@ -15,6 +16,7 @@ Packages <- c(
   'clusterSim',  
   'clValid', 
   'DAAG', 
+  'doSNOW', 
   'dtw', 
   'epicalc', 
   'faraway', 
@@ -22,6 +24,7 @@ Packages <- c(
   'fBasics', 
   'fda', 
   'fdakma',
+  'fdasrvf',
   'fields', 
   'fOptions',
   'foreach', 
@@ -92,6 +95,7 @@ Packages <- c(
   'SenSrivastava', 
   'sets', ## Set operations      
   'slam',   
+  'snow', 
   'sos',
   'speff2trial',
   'st', 
@@ -110,18 +114,13 @@ Packages <- c(
   'xts', 
   'zipcode', 
   'zoo', 
-  'bigmemory', 
-  'doSNOW', 
-  'snow', 
-  'plyr'
 )
 
 for(Package in Packages){
-  print(Package)
   if(require(package=Package, character.only=T) == F){
     try(install.packages(Package, dependencies = TRUE))
   } else{
-    print('already exists')
+    print(paste(Package, 'already exists'))
   }
 }
 
