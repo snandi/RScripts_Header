@@ -40,7 +40,7 @@ Packages <- c(
   'gmaps', 
   'gmodels', 
   'ggplot2',  
-  'gplots', 
+#  'gplots', # deprecated
   'graphics', 
   'gridExtra', 
   'gsubfn', 
