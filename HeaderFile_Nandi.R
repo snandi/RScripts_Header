@@ -1,4 +1,5 @@
 try(library('alr3'))
+try(library('animint'))
 try(library('biganalytics'))
 try(library('biglm'))
 try(library('boot'))

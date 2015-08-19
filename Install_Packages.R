@@ -6,6 +6,7 @@
 
 Packages <- c(
               'alr3', 
+              'animint',            ## For animated ggplot2 graphics
               'biganalytics', 
               'biglm', 
               'bigmemory', 
@@ -16,7 +17,7 @@ Packages <- c(
               'clusterSim',  
               'clValid', 
               'DAAG',
-	      'devtools', 
+              'devtools', 
               'doSNOW', 
               'dtw', 
               'epicalc', 
@@ -44,9 +45,11 @@ Packages <- c(
               'ggplot2',  
               #  'gplots',           ## deprecated
               'graphics', 
+              'grid',                ## Needed by animint
               'gridExtra', 
               'gsubfn', 
               'gtools', 
+              'hexbin',             ## Needed by animint
               'HiddenMarkov', 
               'HMM', 
               'Hmisc', 
@@ -81,6 +84,7 @@ Packages <- c(
               'pls', 
               'plyr',  
               'profr',  
+              'proto',               ## Needed by animint
               'psych', 
               'quantmod', 
               'quantreg', 
@@ -92,8 +96,10 @@ Packages <- c(
               'RMySQL',   
               'robustbase', 
               'robustX',             ## For multivariate median and other experimental stats
+              'RJSONIO',             ## Required by animint
               'Rsymphony', 
               'sandwich', 
+              'scales',              ## Needed by animint
               'SenSrivastava', 
               'sets',                ## Set operations      
               'slam',   
