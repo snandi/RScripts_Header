@@ -100,7 +100,8 @@ Packages <- c(
               'Rsymphony', 
               'sandwich', 
               'scales',              ## Needed by animint
-              'SenSrivastava', 
+              'SenSrivastava',
+              'servr',               ## To plot html & js objects produced by animint
               'sets',                ## Set operations      
               'slam',   
               'snow', 
