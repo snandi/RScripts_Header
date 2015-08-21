@@ -78,7 +78,8 @@ Packages <- c(
               'numDeriv',            ## To calculate gradient, hessian, jacobian of functions
               'nws',
               'orthogonalsplinebasis',
-              'PerformanceAnalytics', 
+              'pdfCluster', 		## Cluster pdfs from mixtures, non-parametric
+	      'PerformanceAnalytics', 
               'phangorn', 
               'plotrix', 
               'pls', 
