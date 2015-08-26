@@ -1,174 +1,23 @@
-try(library('alr3'))
-try(library('animint'))
-try(library('biganalytics'))
-try(library('biglm'))
-try(library('boot'))
-try(library('car'))
-try(library('chron'))
-try(library('cluster'))
-try(library('clusterSim'))
-try(library('clValid'))
-try(library('DAAG'))
-try(library('datasets'))
-try(library('devtools'))
-try(library('doSNOW'))
-try(library('epicalc'))
-try(library('faraway'))
-try(library('fBasics'))
-try(library('fda'))
-try(library('fdakma'))
-try(library('fdasrvf'))
-try(library('foreach'))
-try(library('forecast'))
-try(library('fOptions'))
-try(library('foreign'))
-try(library('fpc'))
-#try(library('fPortfolio'))
-try(library('fRegression'))
-try(library('gam'))
-try(library('gdata'))
-try(library('glmnet'))
-try(library('gmodels'))
-try(library('ggplot2'))
-try(library('gplots'))
-try(library('graphics'))
-try(library('gridExtra'))
-try(library('gtools'))
-try(library('HiddenMarkov'))
-try(library('HMM'))
-try(library('Hmisc'))
-try(library('inline'))
-try(library('iterators'))
-try(library('kernlab'))
-try(library('knitr'))
-try(library('lattice'))
-try(library('leaps'))
-try(library('limma'))
-try(library('lme4'))
-try(library('lmtest'))
-try(library('lmtest'))
-try(library('longitudinalData'))
-try(library('maps'))
-try(library('mAr'))
-try(library('Matrix'))
-try(library('matrixStats'))
-try(library('mclust'))
-try(library('mgcv'))
-try(library('nlme'))
-try(library('nortest'))
-try(library('numDeriv'))
-try(library('nws'))
-try(library('orthogonalsplinebasis'))
-try(library('pdfCluster'))
-try(library('PerformanceAnalytics'))
-try(library('plotrix'))
-try(library('pls'))
-try(library('plyr'))
-try(library('profr'))
-try(library('psych'))
-try(library('quantmod'))
-try(library('R2HTML'))
-try(library('rbenchmark'))
-try(library('Rcpp'))
-try(library('reshape'))
-try(library('reshape2'))
-try(library('robustX'))
-try(library('Rsymphony'))
-try(library('sandwich'))
-try(library('SenSrivastava'))
-try(library('servr'))
-try(library('sets'))
-try(library('sjmsoft'))
-try(library('sos'))
-try(library('speff2trial'))
-try(library('st'))
-try(library('stats'))
-try(library('survey'))
-try(library('survival'))
-try(library('svMisc'))
-try(library('tseries'))
-try(library('TTR'))
-try(library('urca'))
-try(library('vrtest'))
-try(library('wle'))
-try(library('wordcloud'))
-## try(library('xlsReadWrite'))
-## xls.getshlib()
-try(library('XML'))
-try(library('xtable'))
-try(library('xts'))
-try(library('zipcode'))
-try(library('zoo'))
+source('~/RScripts/Install_Packages.R')
 
-MyAutoLoads <- c('alr3', 
-                 'boot', 
-                 'car', 
-                 'chron', 
-                 'cluster', 
-                 #'clusterSim', 
-                 'clValid', 
-                 'DAAG', 
-                 'datasets', 
-                 'dtw', 
-                 'doSNOW', 
-                 'epicalc', 
-                 'faraway', 
-                 'fda', 
-                 'fdakma', 
-                 'fdasrvf', 
-                 'foreach', 
-                 'foreign', 
-                 'fpc', 
-                 'gam', 
-                 'gdata', 
-                 'glmnet', 
-                 'gmodels', 
-                 'ggplot2', 
-                 'graphics', 
-                 'gridExtra', 
-                 'gtools', 
-                 'HiddenMarkov', 
-                 'HMM', 
-                 'Hmisc', 
-                 #'hopach', 
-                 'inline', 
-                 'iterators', 
-                 'lattice', 
-                 'leaps', 
-                 'lmtest', 
-                 #'longitudinalData', 
-                 'lpSolve', 
-                 'mAr', 
-                 'mclust', 
-                 'nlme', 
-                 'nortest', 
-                 'numDeriv', 
-                 'nws', 
-                 'PerformanceAnalytics', 
-                 'plotrix', 
-                 'pls', 
-                 'plyr', 
-                 'profr', 
-                 'psych', 
-                 'quantmod', 
-                 'R2HTML', 
-                 'rbenchmark', 
-                 'reshape', 
-                 'robustX', 
-                 'sandwich', 
-                 'SenSrivastava', 
-                 'sos', 
-                 'stats', 
-                 'survey', 
-                 'survival', 
-                 'svMisc', 
-                 'tseries', 
-                 'urca', 
-                 'vrtest', 
-                 'wle', 
-                 'xtable', 
-                 'xts', 
-                 'zipcode', 
-                 'zoo', 
-                 'seqinr'
-)
+Packages <- fn_getPackages()
+
+## Choose USA (IA) as the CRAN mirror
+Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
+chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
+
+## For loop for requiring packages and installing them if something doesnt exist
+for(Package in Packages){
+  if(require(package=Package, character.only=T) == F){
+    print(paste('Installing', Package))
+    try(install.packages(Package, dependencies = TRUE))
+  } else{
+    print(paste(Package, 'already exists'))
+    require(package=Package, character.only=T)
+  }
+}
+
+## For parallel processing, when passing the list of packages to load
+## in all the cores. Could be different from Packages
+MyAutoLoads <- Packages
+
