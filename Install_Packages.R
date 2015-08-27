@@ -132,6 +132,10 @@ fn_getPackages <- function(){
 }
 
 fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
+  ## Choose USA (IA) as the CRAN mirror
+  Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
+  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
+
   for(Package in Packages){
     if(require(package=Package, character.only=T) == F){
       try(install.packages(Package, dependencies = TRUE))
