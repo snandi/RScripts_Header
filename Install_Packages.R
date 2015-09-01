@@ -93,7 +93,8 @@ fn_getPackages <- function(){
     'quantreg', 
     'R2HTML', 
     'rbenchmark', 
-    'Rcpp', 
+    'Rcpp',
+                'readr',  ## Read flat/tabular text files from disk
     'reshape',  
     'reshape2',  
     'RMySQL',   
@@ -121,7 +122,8 @@ fn_getPackages <- function(){
     'vrtest', 
     'wle', 
     'wordcloud', 
-    'WriteXLS', 
+    'WriteXLS',
+                'xgboost',  ## Extreme Gradient Boosting
     'XML', 
     'xtable', 
     'xts', 
