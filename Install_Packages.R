@@ -57,6 +57,7 @@ fn_getPackages <- function(){
     'hydroTSM', 
     'inline', 
     'iterators', 
+	'jpeg',			## To read/write jpg images
     'kernlab', 
     'knitr', 
     'leaps', 
