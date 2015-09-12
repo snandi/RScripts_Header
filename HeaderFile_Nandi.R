@@ -6,11 +6,13 @@ Packages <- fn_getPackages()
 Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
 chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
 
+Packages_Installed <- Packages
 ## For loop for requiring packages and installing them if something doesnt exist
 for(Package in Packages){
   if(require(package=Package, character.only=T) == F){
-    print(paste('Installing', Package))
-    try(install.packages(Package, dependencies = TRUE))
+    print(paste(Package, 'not Installed'))
+    Packages_Installed <- Packages_Installed[Packages_Installed != Package]
+#     try(install.packages(Package, dependencies = TRUE))
   } else{
     print(paste(Package, 'already exists'))
     require(package=Package, character.only=T)
@@ -19,5 +21,6 @@ for(Package in Packages){
 
 ## For parallel processing, when passing the list of packages to load
 ## in all the cores. Could be different from Packages
-MyAutoLoads <- Packages
+MyAutoLoads <- Packages_Installed
+
 

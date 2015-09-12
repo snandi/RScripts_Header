@@ -18,7 +18,7 @@ fn_getPackages <- function(){
     'clusterSim',  
     'clValid', 
     'DAAG',
-    'devtools', 
+    #'devtools',           ## Only works on R3.2.2 or higher
     'doSNOW', 
     'dtw', 
     'epicalc', 
@@ -34,17 +34,16 @@ fn_getPackages <- function(){
     'forecast',            ## for time series modeling  
     'foreign', 
     'fpc',                 ## For cluster comparisons ## Wont install on lmcg
-    #'fPortfolio', 
-    'fRegression', 
-    #'fSeries', 
-    'fUtilities', 
+#     'fPortfolio', 
+#     'fRegression', 
+#     'fSeries', 
+#     'fUtilities', 
     'gam', 
     'gdata', 
     'glmnet', 
-    'gmaps', 
+#     'gmaps', 
     'gmodels', 
     'ggplot2',  
-    #  'gplots',           ## deprecated
     'graphics', 
     'grid',                ## Needed by animint
     'gridExtra', 
@@ -57,7 +56,7 @@ fn_getPackages <- function(){
     'hydroTSM', 
     'inline', 
     'iterators', 
-	'jpeg',			## To read/write jpg images
+  	'jpeg',			## To read/write jpg images
     'kernlab', 
     'knitr', 
     'leaps', 
@@ -95,14 +94,14 @@ fn_getPackages <- function(){
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
-                'readr',  ## Read flat/tabular text files from disk
+    'readr',  ## Read flat/tabular text files from disk
     'reshape',  
     'reshape2',  
     'RMySQL',   
     'robustbase', 
     'robustX',             ## For multivariate median and other experimental stats
-    'RJSONIO',             ## Required by animint
-    'Rsymphony', 
+#     'RJSONIO',             ## Required by animint
+#     'Rsymphony', 
     'sandwich', 
     'scales',              ## Needed by animint
     'SenSrivastava',
@@ -122,10 +121,10 @@ fn_getPackages <- function(){
     'UsingR',    
     'vrtest', 
     'wle', 
-    'wordcloud', 
-    'WriteXLS',
-                'xgboost',  ## Extreme Gradient Boosting
-    'XML', 
+#     'wordcloud', 
+#     'WriteXLS',
+    'xgboost',  ## Extreme Gradient Boosting
+#     'XML', 
     'xtable', 
     'xts', 
     'zipcode', 
