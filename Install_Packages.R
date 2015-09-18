@@ -85,7 +85,7 @@ fn_getPackages <- function(){
     'plotrix', 
     'pls', 
     'plyr',  
-    'png',                ## To read and write png images
+#    'png',                ## To read and write png images
     'profr',  
     'proto',              ## Needed by animint
     'psych', 
