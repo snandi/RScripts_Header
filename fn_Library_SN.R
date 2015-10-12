@@ -68,3 +68,15 @@ trunc_vector <- function(Vector, pct_trunc_left = 10, pct_trunc_right = 10){
   Vector.Trunc <- Vector[LeftIndex : RightIndex]
   return(Vector.Trunc)  
 }
+
+################################################################## 
+## Normalize a vector
+##################################################################
+normalize_vector <- function(Vector){
+  Vector <- as.vector(Vector)
+  Mean <- mean(Vector)
+  SD <- sd(Vector)
+  Vector.Normalized <- (Vector - Mean)/SD
+  return(Vector.Normalized)
+}
+

@@ -56,7 +56,7 @@ fn_getPackages <- function(){
     'hydroTSM', 
     'inline', 
     'iterators', 
-#    'jpeg',			## To read/write jpg images
+    'jpeg',			## To read/write jpg images
     'kernlab', 
     'knitr', 
     'leaps', 
@@ -85,7 +85,7 @@ fn_getPackages <- function(){
     'plotrix', 
     'pls', 
     'plyr',  
-#    'png',                ## To read and write png images
+    'png',                ## To read and write png images
     'profr',  
     'proto',              ## Needed by animint
     'psych', 
@@ -100,8 +100,8 @@ fn_getPackages <- function(){
     'RMySQL',   
     'robustbase', 
     'robustX',             ## For multivariate median and other experimental stats
-#     'RJSONIO',             ## Required by animint
-#     'Rsymphony', 
+    'RJSONIO',             ## Required by animint
+    'Rsymphony', 
     'sandwich', 
     'scales',              ## Needed by animint
     'SenSrivastava',
@@ -124,7 +124,7 @@ fn_getPackages <- function(){
 #     'wordcloud', 
 #     'WriteXLS',
     'xgboost',  ## Extreme Gradient Boosting
-#     'XML', 
+    'XML', 
     'xtable', 
     'xts', 
     'zipcode', 
@@ -136,7 +136,7 @@ fn_getPackages <- function(){
 fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   ## Choose USA (IA) as the CRAN mirror
   Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
-  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
+  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (MI 1)'))
 
   for(Package in Packages){
     if(require(package=Package, character.only=T) == F){
@@ -147,4 +147,4 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   }
 }
 
-#fn_Install_Packages_CRAN(Packages = fn_getPackages())
+fn_Install_Packages_CRAN(Packages = fn_getPackages())

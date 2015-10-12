@@ -3,3 +3,5 @@ tmp
 backup_linux
 *.pdf
 .Rhistory
+condor_packages
+condor_packages/*
