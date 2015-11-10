@@ -15,10 +15,10 @@ fn_getPackages <- function(){
     'car', 
     'chron', 
     'cluster', 
-    'clusterSim',  
+    #'clusterSim',  
     'clValid', 
     'DAAG',
-    #'devtools',           ## Only works on R3.2.2 or higher
+    'devtools',           ## Only works on R3.2.2 or higher, to install packages from github
     'doSNOW', 
     'dtw', 
     'epicalc', 
@@ -136,7 +136,7 @@ fn_getPackages <- function(){
 fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   ## Choose USA (IA) as the CRAN mirror
   Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
-  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (MI 1)'))
+  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
 
   for(Package in Packages){
     if(require(package=Package, character.only=T) == F){
@@ -147,4 +147,4 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   }
 }
 
-fn_Install_Packages_CRAN(Packages = fn_getPackages())
+#fn_Install_Packages_CRAN(Packages = fn_getPackages())
