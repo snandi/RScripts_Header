@@ -33,6 +33,7 @@ try(library('iterators'))
 try(library('lattice'))
 try(library('leaps'))
 try(library('lme4'))
+try(library('lmerTest'))
 try(library('lmtest'))
 try(library('longitudinalData'))
 try(library('lpSolve'))
@@ -105,7 +106,8 @@ MyAutoLoads <- c('alr3',
                  'inline', 
                  'iterators', 
                  'lattice', 
-                 'leaps', 
+                 'leaps',
+                 'lmerTest',
                  'lmtest', 
                  #'longitudinalData', 
                  'lpSolve', 
