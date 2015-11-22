@@ -21,7 +21,7 @@ fn_getPackages <- function(){
     'devtools',           ## Only works on R3.2.2 or higher, to install packages from github
     'doSNOW', 
     'dtw', 
-    'epicalc', 
+    #'epicalc', 
     'faraway', 
     'fAssets', 
     'fBasics', 
@@ -73,7 +73,8 @@ fn_getPackages <- function(){
     'mclust', 
     'MEMSS', 
     'mgcv', 
-    'modeest', 
+    'modeest',
+    'NCStats',            ## For chi-square post hoc tests
     'nlme', 
     'nortest', 
     'numDeriv',           ## To calculate gradient, hessian, jacobian of functions
