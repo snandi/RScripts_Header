@@ -37,12 +37,18 @@ Packages <- c(
 
 Pkgs_wDep <- fn_prepareDependencies(Pkgs = Packages)
 
-Pkgs_List <- dllibs(libList = Pkgs_wDep, destdir = Dest_Dir, ignore.Bioconductor=T)
+Pkgs_List <- dllibs(
+  libList             = Pkgs_wDep, 
+  destdir             = Dest_Dir, 
+  ignore.Bioconductor = F, 
+  repos               = c("http://mirror.las.iastate.edu/CRAN/")
+)
 
 RLibs <- rlibs(Pkgs_List)
-Dest_Dir <-  paste0(gsub('~/', replacement='', x = Dest_Dir), '/')
+DirPattern <-  paste0(gsub(pattern = '~/', replacement = '', x = Dest_Dir))
 
-RLibs <- gsub(pattern = Dest_Dir, replacement='', x=RLibs)
+RLibs <- gsub(pattern = DirPattern, replacement = '', x = RLibs)
+RLibs <- gsub(pattern = '/', replacement = '', x = RLibs)
 
 Filename <- paste0(Dest_Dir, 'RLibs.txt')
 cat(RLibs, file = Filename, sep = '\n', append = FALSE)

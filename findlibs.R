@@ -77,12 +77,14 @@ is.installed <- function(pkgname)
 # Download libraries and return the download list
 dllibs <- function(libList, destdir=".", ignore.Bioconductor=FALSE, repos=NULL)
 {
+  print(libList)
     if (!file.exists(destdir))
         dir.create(destdir, recursive=TRUE)
     if (is.null(repos))
         repos <- getrepos(ignore.Bioconductor)
     # Downloading them will make a list
     dled <- download.packages(libList, destdir=destdir, repos=repos, type="source")
+  print(dled)
     return(dled)    
 }
 
