@@ -12,7 +12,8 @@ fn_getPackages <- function(){
     'biglm', 
     'bigmemory', 
     'boot',  
-    'car', 
+    'car',
+    'caret',              ## For prediction algorithms like boosting, random forest, etc 
     'chron', 
     'cluster', 
     #'clusterSim',  
