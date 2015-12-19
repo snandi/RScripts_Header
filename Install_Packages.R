@@ -97,7 +97,8 @@ fn_getPackages <- function(){
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
-    'readr',  ## Read flat/tabular text files from disk
+    'readr',  		   ## Read flat/tabular text files from disk
+    'readstata13',         ## Read stata 13 objects
     'reshape',  
     'reshape2',  
     'RMySQL',   
