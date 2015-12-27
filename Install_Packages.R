@@ -6,7 +6,8 @@
 
 fn_getPackages <- function(){
   Packages <- c(
-    'alr3', 
+    'alr3',
+    'AppliedPredictiveModeling', ## Used in Coursera machine learning course
     'animint',            ## For animated ggplot2 graphics
     'biganalytics', 
     'biglm', 
@@ -22,6 +23,7 @@ fn_getPackages <- function(){
     'devtools',           ## Only works on R3.2.2 or higher, to install packages from github
     'doSNOW', 
     'dtw', 
+    'ElemStatLearn',            ## Used in Coursera machine learning course
     #'epicalc', 
     'faraway', 
     'fAssets', 
@@ -82,8 +84,9 @@ fn_getPackages <- function(){
     'numDeriv',           ## To calculate gradient, hessian, jacobian of functions
     'nws',
     'orthogonalsplinebasis',
-    'pdfCluster',   	    ## Cluster pdfs from mixtures, non-parametric
+    'pdfCluster',   	  ## Cluster pdfs from mixtures, non-parametric
     'PerformanceAnalytics', 
+    'pgmm',               ## Used in Coursera machine learning course
     'phangorn', 
     'plotrix', 
     'pls', 
@@ -104,6 +107,7 @@ fn_getPackages <- function(){
     'RMySQL',   
     'robustbase', 
     'robustX',             ## For multivariate median and other experimental stats
+    'rpart',               ## Used in Coursera machine learning course
     'RJSONIO',             ## Required by animint
     'Rsymphony', 
     'sandwich', 
