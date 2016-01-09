@@ -31,6 +31,7 @@ fn_getPackages <- function(){
     'fda', 
     'fdakma',
     'fdasrvf',
+    'fda.usc',             ## For functional data depth
     'fields', 
     'fOptions',
     'foreach',
