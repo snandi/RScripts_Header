@@ -97,7 +97,8 @@ fn_getPackages <- function(){
     'proto',              ## Needed by animint
     'psych', 
     'quantmod', 
-    'quantreg', 
+    'quantreg',
+    'rattle',             ## To get better plots of regression tree outputs
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
