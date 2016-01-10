@@ -7,37 +7,37 @@
 fn_getPackages <- function(){
   Packages <- c(
     'alr3',
-    'AppliedPredictiveModeling', ## Used in Coursera machine learning course
-    'animint',            ## For animated ggplot2 graphics
+    'AppliedPredictiveModeling',    ## Used in Coursera machine learning course
+    'animint',                      ## For animated ggplot2 graphics
     'biganalytics', 
     'biglm', 
     'bigmemory', 
     'boot',  
     'car',
-    'caret',              ## For prediction algorithms like boosting, random forest, etc 
+    'caret',                        ## For prediction algorithms like boosting, random forest, etc 
     'chron', 
     'cluster', 
-    #'clusterSim',  
+#     'clusterSim',  
     'clValid', 
     'DAAG',
-    'devtools',           ## Only works on R3.2.2 or higher, to install packages from github
+    'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doSNOW', 
     'dtw', 
-    'ElemStatLearn',            ## Used in Coursera machine learning course
-    #'epicalc', 
+    'ElemStatLearn',                ## Used in Coursera machine learning course
+#     'epicalc', 
     'faraway', 
     'fAssets', 
     'fBasics', 
     'fda', 
     'fdakma',
     'fdasrvf',
-    'fda.usc',             ## For functional data depth
+    'fda.usc',                      ## For functional data depth
     'fields', 
     'fOptions',
     'foreach',
-    'forecast',            ## for time series modeling  
+    'forecast',                     ## for time series modeling  
     'foreign', 
-    'fpc',                 ## For cluster comparisons ## Wont install on lmcg
+    'fpc',                          ## For cluster comparisons ## Wont install on lmcg
 #     'fPortfolio', 
 #     'fRegression', 
 #     'fSeries', 
@@ -49,18 +49,18 @@ fn_getPackages <- function(){
     'gmodels', 
     'ggplot2',  
     'graphics', 
-    'grid',                ## Needed by animint
+    'grid',                         ## Needed by animint
     'gridExtra', 
     'gsubfn', 
     'gtools', 
-    'hexbin',             ## Needed by animint
+    'hexbin',                       ## Needed by animint
     'HiddenMarkov', 
     'HMM', 
     'Hmisc', 
     'hydroTSM', 
     'inline', 
     'iterators', 
-    'jpeg',			## To read/write jpg images
+    'jpeg',			                    ## To read/write jpg images
     'kernlab', 
     'knitr', 
     'leaps', 
@@ -79,43 +79,43 @@ fn_getPackages <- function(){
     'MEMSS', 
     'mgcv', 
     'modeest',
-    'NCStats',            ## For chi-square post hoc tests
+    'NCStats',                      ## For chi-square post hoc tests
     'nlme', 
     'nortest', 
-    'numDeriv',           ## To calculate gradient, hessian, jacobian of functions
+    'numDeriv',                     ## To calculate gradient, hessian, jacobian of functions
     'nws',
     'orthogonalsplinebasis',
-    'pdfCluster',   	  ## Cluster pdfs from mixtures, non-parametric
+    'pdfCluster',   	              ## Cluster pdfs from mixtures, non-parametric
     'PerformanceAnalytics', 
-    'pgmm',               ## Used in Coursera machine learning course
+    'pgmm',                         ## Used in Coursera machine learning course
     'phangorn', 
     'plotrix', 
     'pls', 
     'plyr',  
-    'png',                ## To read and write png images
+    'png',                          ## To read and write png images
     'profr',  
-    'proto',              ## Needed by animint
+    'proto',                        ## Needed by animint
     'psych', 
     'quantmod', 
     'quantreg', 
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
-    'readr',  		   ## Read flat/tabular text files from disk
-    'readstata13',         ## Read stata 13 objects
+    'readr',  		                  ## Read flat/tabular text files from disk
+    'readstata13',                  ## Read stata 13 objects
     'reshape',  
     'reshape2',  
     'RMySQL',   
     'robustbase', 
-    'robustX',             ## For multivariate median and other experimental stats
-    'rpart',               ## Used in Coursera machine learning course
-    'RJSONIO',             ## Required by animint
+    'robustX',                      ## For multivariate median and other experimental stats
+    'rpart',                        ## Used in Coursera machine learning course
+    'RJSONIO',                      ## Required by animint
     'Rsymphony', 
     'sandwich', 
-    'scales',              ## Needed by animint
+    'scales',                       ## Needed by animint
     'SenSrivastava',
-    'servr',               ## To plot html & js objects produced by animint
-    'sets',                ## Set operations      
+    'servr',                        ## To plot html & js objects produced by animint
+    'sets',                         ## Set operations      
     'slam',   
     'snow', 
     'sos',
@@ -132,7 +132,7 @@ fn_getPackages <- function(){
     'wle', 
 #     'wordcloud', 
 #     'WriteXLS',
-    'xgboost',  ## Extreme Gradient Boosting
+    'xgboost',                      ## Extreme Gradient Boosting
     'XML', 
     'xtable', 
     'xts', 
