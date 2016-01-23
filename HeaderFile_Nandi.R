@@ -22,5 +22,6 @@ for(Package in Packages){
 ## For parallel processing, when passing the list of packages to load
 ## in all the cores. Could be different from Packages
 MyAutoLoads <- Packages_Installed
+Packages_Par <- MyAutoLoads
 
 
