@@ -6,6 +6,7 @@
 
 fn_getPackages <- function(){
   Packages <- c(
+    'ade4',                         ## Required by doSNOW            
     'alr3',
     'AppliedPredictiveModeling',    ## Used in Coursera machine learning course
     'animint',                      ## For animated ggplot2 graphics
@@ -17,10 +18,11 @@ fn_getPackages <- function(){
     'caret',                        ## For prediction algorithms like boosting, random forest, etc 
     'chron', 
     'cluster', 
-#     'clusterSim',  
+    'clusterSim',  
     'clValid', 
     'DAAG',
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
+#    'doParallel',
     'doSNOW', 
     'dtw', 
     'ElemStatLearn',                ## Used in Coursera machine learning course
@@ -68,7 +70,7 @@ fn_getPackages <- function(){
     'lme4',
     'lmerTest',            
     'lmtest',  
-    'longitudinalData', 
+#    'longitudinalData', 
     'lpSolve', 
     'lubridate', 
     'maps', 
@@ -79,7 +81,7 @@ fn_getPackages <- function(){
     'MEMSS', 
     'mgcv', 
     'modeest',
-    'NCStats',                      ## For chi-square post hoc tests
+#    'NCStats',                      ## For chi-square post hoc tests
     'nlme', 
     'nortest', 
     'numDeriv',                     ## To calculate gradient, hessian, jacobian of functions
@@ -88,7 +90,7 @@ fn_getPackages <- function(){
     'pdfCluster',   	              ## Cluster pdfs from mixtures, non-parametric
     'PerformanceAnalytics', 
     'pgmm',                         ## Used in Coursera machine learning course
-    'phangorn', 
+#    'phangorn', 
     'plotrix', 
     'pls', 
     'plyr',  
@@ -106,15 +108,16 @@ fn_getPackages <- function(){
     'readstata13',                  ## Read stata 13 objects
     'reshape',  
     'reshape2',  
-    'RMySQL',   
+#    'RMySQL',   
     'robustbase', 
     'robustX',                      ## For multivariate median and other experimental stats
     'rpart',                        ## Used in Coursera machine learning course
-    'RJSONIO',                      ## Required by animint
-    'Rsymphony', 
+#    'RJSONIO',                      ## Required by animint
+#    'Rsymphony', 
     'sandwich', 
     'scales',                       ## Needed by animint
     'SenSrivastava',
+    'seqinr',                       
     'servr',                        ## To plot html & js objects produced by animint
     'sets',                         ## Set operations      
     'slam',   
@@ -158,3 +161,9 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
 }
 
 #fn_Install_Packages_CRAN(Packages = fn_getPackages())
+
+Packages <- fn_getPackages()
+
+for(Package in Packages){
+      try(install.packages(Package, dependencies = TRUE))
+}

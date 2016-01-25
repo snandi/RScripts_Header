@@ -14,7 +14,7 @@ for(Package in Packages){
     Packages_Installed <- Packages_Installed[Packages_Installed != Package]
 #     try(install.packages(Package, dependencies = TRUE))
   } else{
-    print(paste(Package, 'already exists'))
+#    print(paste(Package, 'already exists'))
     require(package=Package, character.only=T)
   }
 }
