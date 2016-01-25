@@ -22,11 +22,11 @@ fn_getPackages <- function(){
     'clValid', 
     'DAAG',
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
-#    'doParallel',
+    'doParallel',
     'doSNOW', 
     'dtw', 
     'ElemStatLearn',                ## Used in Coursera machine learning course
-#     'epicalc', 
+    'epicalc', 
     'faraway', 
     'fAssets', 
     'fBasics', 
@@ -40,14 +40,10 @@ fn_getPackages <- function(){
     'forecast',                     ## for time series modeling  
     'foreign', 
     'fpc',                          ## For cluster comparisons ## Wont install on lmcg
-#     'fPortfolio', 
-#     'fRegression', 
-#     'fSeries', 
-#     'fUtilities', 
     'gam', 
     'gdata', 
     'glmnet', 
-#     'gmaps', 
+    'gmaps', 
     'gmodels', 
     'ggplot2',  
     'graphics', 
@@ -70,7 +66,7 @@ fn_getPackages <- function(){
     'lme4',
     'lmerTest',            
     'lmtest',  
-#    'longitudinalData', 
+    'longitudinalData', 
     'lpSolve', 
     'lubridate', 
     'maps', 
@@ -81,7 +77,7 @@ fn_getPackages <- function(){
     'MEMSS', 
     'mgcv', 
     'modeest',
-#    'NCStats',                      ## For chi-square post hoc tests
+    'NCStats',                      ## For chi-square post hoc tests
     'nlme', 
     'nortest', 
     'numDeriv',                     ## To calculate gradient, hessian, jacobian of functions
@@ -90,7 +86,7 @@ fn_getPackages <- function(){
     'pdfCluster',   	              ## Cluster pdfs from mixtures, non-parametric
     'PerformanceAnalytics', 
     'pgmm',                         ## Used in Coursera machine learning course
-#    'phangorn', 
+    'phangorn', 
     'plotrix', 
     'pls', 
     'plyr',  
@@ -108,12 +104,12 @@ fn_getPackages <- function(){
     'readstata13',                  ## Read stata 13 objects
     'reshape',  
     'reshape2',  
-#    'RMySQL',   
+    'RMySQL',   
     'robustbase', 
     'robustX',                      ## For multivariate median and other experimental stats
     'rpart',                        ## Used in Coursera machine learning course
-#    'RJSONIO',                      ## Required by animint
-#    'Rsymphony', 
+    'RJSONIO',                      ## Required by animint
+    'Rsymphony', 
     'sandwich', 
     'scales',                       ## Needed by animint
     'SenSrivastava',
@@ -134,7 +130,7 @@ fn_getPackages <- function(){
     'UsingR',    
     'vrtest', 
     'wle', 
-#     'wordcloud', 
+    'wordcloud', 
 #     'WriteXLS',
     'xgboost',                      ## Extreme Gradient Boosting
     'XML', 
@@ -146,7 +142,7 @@ fn_getPackages <- function(){
   return(Packages)  
 }
 
-fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
+fn_ReInstall_Packages_CRAN <- function(Packages = fn_getPackages()){
   ## Choose USA (IA) as the CRAN mirror
   Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
   chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
@@ -160,10 +156,14 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   }
 }
 
-#fn_Install_Packages_CRAN(Packages = fn_getPackages())
+#fn_ReInstall_Packages_CRAN(Packages = fn_getPackages())
 
-Packages <- fn_getPackages()
+fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
+  Mirrors <- getCRANmirrors(all = FALSE, local.only = FALSE)
+  chooseCRANmirror(graphics = F, ind = which(Mirrors$Name == 'USA (IA)'))
 
-for(Package in Packages){
-      try(install.packages(Package, dependencies = TRUE))
+  for(Package in Packages){
+    try(install.packages(Package, dependencies = TRUE))
+  }
 }
+fn_Install_Packages_CRAN(Packages = fn_getPackages())
