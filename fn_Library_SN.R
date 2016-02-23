@@ -27,6 +27,10 @@ rowSE <- function(Data){
   SE <- apply(X = Data, MARGIN = 1, FUN=function(Row){sd(Row)/sqrt(length(Row))})
   return(SE)
 }
+
+colSE <- function(Data){
+  return(rowSE(t(Data)))
+}
 ################################################################## 
 
 ################################################################## 

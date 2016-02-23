@@ -44,8 +44,10 @@ fn_getPackages <- function(){
     'gdata', 
     'glmnet', 
     'gmaps', 
-    'gmodels', 
-    'ggplot2',  
+    'gmodels',
+    'ggfortify',                    ## For plotting lm() and glm() diagnostic plots
+    'ggplot2',
+    'GGally',                       ## For plotting functions like ggpairs
     'graphics', 
     'grid',                         ## Needed by animint
     'gridExtra', 
@@ -166,4 +168,4 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
     try(install.packages(Package, dependencies = TRUE))
   }
 }
-fn_Install_Packages_CRAN(Packages = fn_getPackages())
+#fn_Install_Packages_CRAN(Packages = fn_getPackages())
