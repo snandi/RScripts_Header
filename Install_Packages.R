@@ -122,7 +122,8 @@ fn_getPackages <- function(){
     'snow', 
     'sos',
     'speff2trial',
-    'st', 
+    'st',
+    'stargazer',                    ## Export tables from different regression outputs into latex
     'stats', 
     'survey', 
     'svMisc', 
