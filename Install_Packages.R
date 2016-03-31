@@ -104,6 +104,7 @@ fn_getPackages <- function(){
     'Rcpp',
     'readr',  		                  ## Read flat/tabular text files from disk
     'readstata13',                  ## Read stata 13 objects
+    'refund',                       ## Required by Pomann_Staicu_etal 2 sample tests
     'reshape',  
     'reshape2',  
     'RMySQL',   
