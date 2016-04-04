@@ -60,9 +60,10 @@ fn_getPackages <- function(){
     'hydroTSM', 
     'inline', 
     'iterators', 
-    'jpeg',			                    ## To read/write jpg images
+    'jpeg',	                    ## To read/write jpg images
     'kernlab', 
-    'knitr', 
+    'knitr',
+    'kSamples',                     ## For k-sample Anderson-Darling test
     'leaps', 
     'limma', 
     'lme4',
