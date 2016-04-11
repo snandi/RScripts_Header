@@ -76,7 +76,8 @@ fn_getPackages <- function(){
     'maptools', 
     'mAr', 
     'matrixStats', 
-    'mclust', 
+    'mclust',
+    'memisc',                       ## For better display of outputs in R markdown
     'MEMSS', 
     'mgcv', 
     'modeest',
@@ -86,7 +87,8 @@ fn_getPackages <- function(){
     'numDeriv',                     ## To calculate gradient, hessian, jacobian of functions
     'nws',
     'orthogonalsplinebasis',
-    'pdfCluster',   	              ## Cluster pdfs from mixtures, non-parametric
+    'pander',                       ## For better R markdown outputs
+    'pdfCluster',   	            ## Cluster pdfs from mixtures, non-parametric
     'PerformanceAnalytics', 
     'pgmm',                         ## Used in Coursera machine learning course
     'phangorn', 
@@ -99,11 +101,11 @@ fn_getPackages <- function(){
     'psych', 
     'quantmod', 
     'quantreg',
-    'rattle',             ## To get better plots of regression tree outputs
+    'rattle',                       ## To get better plots of regression tree outputs
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
-    'readr',  		                  ## Read flat/tabular text files from disk
+    'readr',  		            ## Read flat/tabular text files from disk
     'readstata13',                  ## Read stata 13 objects
     'refund',                       ## Required by Pomann_Staicu_etal 2 sample tests
     'reshape',  
