@@ -123,14 +123,16 @@ fn_getPackages <- function(){
     'servr',                        ## To plot html & js objects produced by animint
     'sets',                         ## Set operations      
     'slam',   
-    'snow', 
+    'snow',
+    'SnowballC',                    ## For text mining
     'sos',
     'speff2trial',
     'st',
     'stargazer',                    ## Export tables from different regression outputs into latex
     'stats', 
     'survey', 
-    'svMisc', 
+    'svMisc',
+    'tm',                           ## Text mining package
     'tseries', 
     'TTR', 
     'urca',
