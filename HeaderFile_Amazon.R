@@ -11,6 +11,7 @@ fn_getPackages_Amazon <- function(){
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doParallel',
     'doSNOW', 
+    'e1071',                        ## For naive-bayes classifier
     'ElemStatLearn',                ## Used in Coursera machine learning course
     #'epicalc', 
     'faraway', 
@@ -27,7 +28,8 @@ fn_getPackages_Amazon <- function(){
     'gridExtra', 
     'gsubfn', 
     'gtools', 
-    'Hmisc', 
+    'Hmisc',
+    'hunspell',                  ## To parse text, spell check
     'jpeg',	                    ## To read/write jpg images
     'kernlab', 
     'knitr',
@@ -68,7 +70,8 @@ fn_getPackages_Amazon <- function(){
     'readr',  		            ## Read flat/tabular text files from disk
     'refund',                       ## Required by Pomann_Staicu_etal 2 sample tests
     'reshape',  
-    'reshape2',  
+    'reshape2',
+    'RFunctionsSN',
     #'RMySQL',   
     'robustbase', 
     'robustX',                      ## For multivariate median and other experimental stats

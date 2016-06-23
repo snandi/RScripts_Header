@@ -25,6 +25,7 @@ fn_getPackages <- function(){
     'doParallel',
     'doSNOW', 
     'dtw', 
+    'e1071',                        ## For naive-bayes classifier
     'ElemStatLearn',                ## Used in Coursera machine learning course
     'epicalc', 
     'faraway', 
