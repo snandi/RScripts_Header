@@ -15,7 +15,8 @@ fn_getPackages_Amazon <- function(){
     'e1071',                        ## For naive-bayes classifier
     'ElemStatLearn',                ## Used in Coursera machine learning course
     #'epicalc', 
-    'faraway', 
+    'faraway',
+    'flexclust',                    ## distance measures and centroid computation for clustering
     'foreach',
     'forecast',                     ## for time series modeling  
     'fpc',                          ## For cluster comparisons ## Wont install on lmcg

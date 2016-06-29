@@ -37,6 +37,7 @@ fn_getPackages <- function(){
     'fdasrvf',
     'fda.usc',                      ## For functional data depth
     'fields', 
+    'flexclust',                    ## distance measures and centroid computation for clustering
     'fOptions',
     'foreach',
     'forecast',                     ## for time series modeling  
