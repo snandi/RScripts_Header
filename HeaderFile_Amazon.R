@@ -7,7 +7,8 @@ fn_getPackages_Amazon <- function(){
     'chron', 
     'cluster', 
     #'clusterSim',  
-    'clValid', 
+    'clValid',
+    'dbscan',
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doParallel',
     'doSNOW', 

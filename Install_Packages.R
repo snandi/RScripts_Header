@@ -21,6 +21,7 @@ fn_getPackages <- function(){
     'clusterSim',  
     'clValid', 
     'DAAG',
+    'dbscan',                       ## For density based clustering
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doParallel',
     'doSNOW', 
