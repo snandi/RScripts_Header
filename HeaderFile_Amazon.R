@@ -94,6 +94,7 @@ fn_getPackages_Amazon <- function(){
     'st',
     'stargazer',                    ## Export tables from different regression outputs into latex
     'stats', 
+    'stringr',
     'survey', 
     'svMisc',
     'tm',                           ## Text mining package
@@ -103,9 +104,9 @@ fn_getPackages_Amazon <- function(){
     'UsingR',    
     'vrtest', 
     'wle', 
-    'wordcloud', 
-    'xgboost',                      ## Extreme Gradient Boosting
-    'XML', 
+    # 'wordcloud', 
+    # 'xgboost',                      ## Extreme Gradient Boosting
+    # 'XML', 
     'xtable', 
     'zipcode', 
     'zoo'

@@ -134,6 +134,7 @@ fn_getPackages <- function(){
     'st',
     'stargazer',                    ## Export tables from different regression outputs into latex
     'stats', 
+    'stringr',                      ## For regular expressions
     'survey', 
     'svMisc',
     'tm',                           ## Text mining package
