@@ -98,7 +98,8 @@ fn_getPackages <- function(){
     'phangorn', 
     'plotrix', 
     'pls', 
-    'plyr',  
+    'plyr', 
+    'PMCMR',                        ## For multiple comparison & post hoc test
     'png',                          ## To read and write png images
     'profr',  
     'proto',                        ## Needed by animint
