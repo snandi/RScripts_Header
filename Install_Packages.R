@@ -48,9 +48,10 @@ fn_getPackages <- function(){
     'glmnet', 
     'gmaps', 
     'gmodels',
+    'GGally',                       ## For plotting functions like ggpairs
     'ggfortify',                    ## For plotting lm() and glm() diagnostic plots
     'ggplot2',
-    'GGally',                       ## For plotting functions like ggpairs
+    'ggthemes',                     ## For different ggplot themes
     'graphics', 
     'grid',                         ## Needed by animint
     'gridExtra', 
