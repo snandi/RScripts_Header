@@ -21,6 +21,7 @@ fn_getPackages <- function(){
     'clusterSim',  
     'clValid', 
     'DAAG',
+    'data.table',                   ## More efficient dataframe type operations
     'dbscan',                       ## For density based clustering
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doParallel',
@@ -109,11 +110,12 @@ fn_getPackages <- function(){
     'R2HTML', 
     'rbenchmark', 
     'Rcpp',
-    'readr',  		            ## Read flat/tabular text files from disk
+    'readr',  		                  ## Read flat/tabular text files from disk
     'readstata13',                  ## Read stata 13 objects
     'refund',                       ## Required by Pomann_Staicu_etal 2 sample tests
     'reshape',  
-    'reshape2',  
+    'reshape2',   
+    'Rfit',                         ## Rank based regression models   
     'RMySQL',   
     'robustbase', 
     'robustX',                      ## For multivariate median and other experimental stats
@@ -137,6 +139,7 @@ fn_getPackages <- function(){
     'stringr',                      ## For regular expressions
     'survey', 
     'svMisc',
+    'tidyr',
     'tm',                           ## Text mining package
     'tseries', 
     'TTR', 
