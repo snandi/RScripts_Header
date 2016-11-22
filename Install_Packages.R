@@ -52,11 +52,7 @@ fn_getPackages <- function(){
     'GGally',                       ## For plotting functions like ggpairs
     'ggfortify',                    ## For plotting lm() and glm() diagnostic plots
     'ggplot2',
-<<<<<<< HEAD
     'ggthemes',                     ## For different ggplot2 themes
-=======
-    'ggthemes',                     ## For different ggplot themes
->>>>>>> 5a71653a263fb6c2d40c159a80f0be308f889a45
     'graphics', 
     'grid',                         ## Needed by animint
     'gridExtra', 
