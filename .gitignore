@@ -7,3 +7,4 @@ condor_packages
 condor_packages/*
 *.out
 *.Rout
+_*

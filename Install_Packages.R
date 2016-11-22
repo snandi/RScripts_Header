@@ -1,6 +1,6 @@
 ## To choose a CRAN Mirror
 #chooseCRANmirror(graphics=FALSE)
-## Choose 57 for Berkeley, 60 for Iowa, 68 for Revolution R
+## Choose 56 for Berkeley, 60 for Iowa, 68 for Revolution R
 
 #install.packages("rneos", repos="http://r-forge.r-project.org/projects/rneos/")
 
@@ -52,7 +52,11 @@ fn_getPackages <- function(){
     'GGally',                       ## For plotting functions like ggpairs
     'ggfortify',                    ## For plotting lm() and glm() diagnostic plots
     'ggplot2',
+<<<<<<< HEAD
     'ggthemes',                     ## For different ggplot2 themes
+=======
+    'ggthemes',                     ## For different ggplot themes
+>>>>>>> 5a71653a263fb6c2d40c159a80f0be308f889a45
     'graphics', 
     'grid',                         ## Needed by animint
     'gridExtra', 
@@ -100,7 +104,8 @@ fn_getPackages <- function(){
     'phangorn', 
     'plotrix', 
     'pls', 
-    'plyr',  
+    'plyr', 
+    'PMCMR',                        ## For multiple comparison & post hoc test
     'png',                          ## To read and write png images
     'profr',  
     'proto',                        ## Needed by animint

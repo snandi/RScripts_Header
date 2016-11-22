@@ -8,10 +8,12 @@ fn_getPackages_Amazon <- function(){
     'cluster', 
     #'clusterSim',  
     'clValid',
+    'data.table',
     'dbscan',
     'devtools',                     ## Only works on R3.2.2 or higher, to install packages from github
     'doParallel',
-    'doSNOW', 
+    'doSNOW',
+    'dplyr',
     'e1071',                        ## For naive-bayes classifier
     'ElemStatLearn',                ## Used in Coursera machine learning course
     #'epicalc', 
@@ -73,6 +75,7 @@ fn_getPackages_Amazon <- function(){
     'refund',                       ## Required by Pomann_Staicu_etal 2 sample tests
     'reshape',  
     'reshape2',
+    'RColorBrewer',
     'RFunctionsSN',
     #'RMySQL',   
     'robustbase', 
