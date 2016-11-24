@@ -67,7 +67,8 @@ fn_getPackages <- function(){
     'inline', 
     'iterators', 
     'jpeg',	                    ## To read/write jpg images
-    'kernlab', 
+    'kernlab',
+    'KernSmooth',                   ## For nonparametric kernel smoothing methods
     'knitr',
     'kSamples',                     ## For k-sample Anderson-Darling test
     'leaps', 
@@ -89,7 +90,8 @@ fn_getPackages <- function(){
     'modeest',
     'NCStats',                      ## For chi-square post hoc tests
     'nlme', 
-    'nortest', 
+    'nortest',
+    'np',                           ## For nonparametric regression
     'numDeriv',                     ## To calculate gradient, hessian, jacobian of functions
     'nws',
     'orthogonalsplinebasis',
