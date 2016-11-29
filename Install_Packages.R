@@ -188,3 +188,6 @@ fn_Install_Packages_CRAN <- function(Packages = fn_getPackages()){
   }
 }
 #fn_Install_Packages_CRAN(Packages = fn_getPackages())
+
+library( devtools )
+install_bitbucket("mkuhn/parallelRandomForest", ref="parallelRandomForest")
