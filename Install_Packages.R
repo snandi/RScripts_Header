@@ -45,6 +45,7 @@ fn_getPackages <- function(){
     'foreign', 
     'fpc',                          ## For cluster comparisons ## Wont install on lmcg
     'gam', 
+    'gbm',                          ## For gradient boosting
     'gdata', 
     'glmnet', 
     'gmaps', 
@@ -85,7 +86,8 @@ fn_getPackages <- function(){
     'matrixStats', 
     'mclust',
     'memisc',                       ## For better display of outputs in R markdown
-    'MEMSS', 
+    'MEMSS',
+    'Metrics',                      ## For model performance metrics
     'mgcv', 
     'modeest',
     'NCStats',                      ## For chi-square post hoc tests
