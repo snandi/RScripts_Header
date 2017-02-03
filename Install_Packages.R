@@ -133,7 +133,8 @@ fn_getPackages <- function(){
     'SenSrivastava',
     'seqinr',                       
     'servr',                        ## To plot html & js objects produced by animint
-    'sets',                         ## Set operations      
+    'sets',                         ## Set operations
+    'SimilarityMeasures',           ## Trajectory Similarity Measures
     'slam',   
     'snow',
     'SnowballC',                    ## For text mining
